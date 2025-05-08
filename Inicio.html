@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="Css/Css.css">
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <header>
+        <img src="Images/laboratory.jpg" alt="Imagen Titulo" class="imagenTitulo">
+        <span class="text-dark">LA</span>
+        <span class="text-primary">AN</span>
+        <span class="text-danger">EX</span>
+        <span class="text-success">EX</span>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#laboratorio">Laboratorio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#exoticos">Exóticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#imagenes-equipo">Equipo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="animalesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            De-extinción
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="animalesDropdown">
+                            <li><a class="dropdown-item" href="#lobos">Lobo Huargo</a></li>
+                            <li><a class="dropdown-item" href="#mamut">Mamut</a></li>
+                            <li><a class="dropdown-item" href="#proyectos">Proyectos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactanos">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--  ROW CON INICIO Y FOTO SERPIENTE-->
+    <div class="row " id="inicio">
+        <div class="col col-sm-12 col-md-12">
+            <div class="contenedorTexto">
+                <p class="texto-superpuesto">LAANEXEX</p>
+                <img src="Images/serpiente.jpg" alt="Serpiente Inicio" class="imagenInicio">
+            </div>
+        </div>
+    </div>
+
+    <div class="row position-absolute mx-4 fw-bold" style="margin-top: -28px; font-size: 18px;     z-index: 4;">
+        <label class="w-100 text-white">LAboratorio de ANimales</label>
+        <label class="w-100 margen_texto">EXóticos de EXtremadura</label>
+    </div>
+
+    <!-- 3 elecciones de inicio -->
+    <div class="row align-items-center pt-5">
+        <div class="col col-md-4 d-flex align-items-center justify-content-center flex-column">
+            <div class="text-center border rounded-circle p-3 bg-success">
+                <i class="fa-solid fa-phone fa-3x text-white"></i>
+            </div>
+        </div>
+        <div class="col col-md-4 d-flex align-items-center justify-content-center flex-column">
+            <div class="text-center border rounded-circle p-3 bg-success">
+                <i class="fa-solid fa-calendar-days fa-3x text-white"></i>
+            </div>
+        </div>
+        <div class="col col-md-4 d-flex align-items-center justify-content-center flex-column">
+            <div class="text-center border rounded-circle p-3 bg-success">
+                <i class="fa-solid fa-user fa-3x text-white"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col col-md-4 d-flex align-items-center flex-column">
+            <a href="#contacto" class="text-decoration-none">
+                <h5 class="text-center border-bottom">Teléfono</h5>
+            </a>
+            <p class="info_iconos">924 688 05X<br>678 951 25X</p>
+        </div>
+        <div class="col col-md-4 d-flex align-items-center flex-column">
+            <a href="#cita" class="text-decoration-none">
+                <h5 class="text-center border-bottom">Pide tu cita</h5>
+            </a>
+            <p class="info_citas">Visitanos sin esperas</p>
+        </div>
+        <div class="col col-md-4 d-flex align-items-center flex-column">
+            <a href="#contactanos" class="text-decoration-none">
+                <h5 class="text-center border-bottom">¿Estás interesado?</h5>
+            </a>
+            <p class="info_cv">Dejanos tu CV</p>
+        </div>
+    </div>
+
+    <!-- CARROUSEL INICIO -->
+    <div id="carouselInicio" class="carousel slide mx-auto" style="width: 800px; position: relative;">
+        <div class="carousel-inner text-center">
+            <div class="carousel-item active">
+                <a href="#lobos">
+                    <img src="/Images/deExtincionUno.jpg" class="d-block mx-auto" alt="deUno"
+                        style="width: 800px; height: 500px; object-fit: cover; border-radius: 12px;">
+                </a>
+                <div class="carousel-caption d-none d-md-block"
+                    style="background: rgba(0,0,0,0.5); padding: 20px 30px; border-radius: 12px; color: white; text-shadow: 2px 2px 8px black; font-weight: bold; font-size: 2rem; left: 50%; transform: translateX(-50%); width: max-content; max-width: 90%;">
+                    <h5 style="margin:0; padding:0;">Objetivo DE-EXTINCIÓN conseguido</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="#videoEmpresa">
+                    <img src="Images/deExtincionDos.jpg" class="d-block mx-auto" alt="deDos"
+                        style="width: 800px; height: 500px; object-fit: cover; border-radius: 12px;">
+                </a>
+                <div class="carousel-caption d-none d-md-block"
+                    style="background: rgba(0,0,0,0.5); padding: 20px 30px; border-radius: 12px; color: white; text-shadow: 2px 2px 8px black; font-weight: bold; font-size: 2rem; left: 50%; transform: translateX(-50%); width: max-content; max-width: 90%;">
+                    <h5 style="margin:0; padding:0;">Conoce nuestras instalaciones</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="#CRISPR">
+                    <img src="/Images/deExtincionTres.jpg" class="d-block mx-auto" alt="deTres"
+                        style="width: 800px; height: 500px; object-fit: cover; border-radius: 12px;">
+                </a>
+                <div class="carousel-caption d-none d-md-block"
+                    style="background: rgba(0,0,0,0.5); padding: 20px 30px; border-radius: 12px; color: white; text-shadow: 2px 2px 8px black; font-weight: bold; font-size: 2rem; left: 50%; transform: translateX(-50%); width: max-content; max-width: 90%;">
+                    <h5 style="margin:0; padding:0;">CRISPR</h5>
+                    <p style="margin:0; padding:0; font-size: 1.2rem;">Mirando al futuro</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev"
+            style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); width: 40px; height: 40px; background: rgba(0,0,0,0.4); border-radius: 50%;">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next"
+            style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); width: 40px; height: 40px; background: rgba(0,0,0,0.4); border-radius: 50%;">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- TEXTO INCRUSTADO MITAD UNO, MITAD OTRO -->
+    <div class="texto-cientifico">
+        <h3>Laboratorio Animales Exóticos Extremadura</h3>
+        <h4>Siempre a tu disposición</h4>
+    </div>
+
+    <!-- VETERINARIOS -->
+    <div class="container py-5" id="imagenes-equipo">
+        <div class="row justify-content-center g-4">
+            <!-- Miembro 1 -->
+            <div class="col-md-4">
+                <div class="card text-center h-100 shadow">
+                    <div class="card-body">
+                        <img src="Images/veterinarioUno.jpg" class="rounded-circle border mb-3" alt="Veterinario Uno"
+                            style="width: 120px; height: 120px; object-fit: cover;" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Especialista en medicina interna y bienestar animal">
+                        <h5 class="card-title mb-1">Dr. Juan Pérez</h5>
+                        <p class="card-text text-muted small fst-italic">
+                            “Los animales son maestros de vida y amor incondicional.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Miembro 2 -->
+            <div class="col-md-4">
+                <div class="card text-center h-100 shadow">
+                    <div class="card-body">
+                        <img src="Images/veterinariaDos.jpg" class="rounded-circle border mb-3" alt="Veterinaria Dos"
+                            style="width: 120px; height: 120px; object-fit: cover;" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Experta en cirugía y rehabilitación animal">
+                        <h5 class="card-title mb-1">Dra. Laura Gómez</h5>
+                        <p class="card-text text-muted small fst-italic">
+                            “La ciencia nos da las herramientas para proteger y sanar.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Miembro 3 -->
+            <div class="col-md-4">
+                <div class="card text-center h-100 shadow">
+                    <div class="card-body">
+                        <img src="Images/veterinarioTres.jpg" class="rounded-circle border mb-3" alt="Veterinario Tres"
+                            style="width: 120px; height: 120px; object-fit: cover;" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Investigador en salud pública veterinaria">
+                        <h5 class="card-title mb-1">Dr. Carlos Ruiz</h5>
+                        <p class="card-text text-muted small fst-italic">
+                            “Cada descubrimiento es un paso hacia un mundo mejor para ellos.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AJO -->
+    <div class="pt-5 pb-5 d-flex justify-content-center align-items-center flex-wrap" id="exoticos"
+        style="background: #f5f8fd;">
+        <img src="Images/Ajo.jpg" class="img-fluid mx-4"
+            style="width: 350px; height: auto; border-radius: 16px; box-shadow: 0 2px 16px rgba(30,60,90,0.08);">
+        <div class="bienvenida-exoticos" style="max-width: 600px;">
+            <h2 class="text-center"
+                style="font-family: 'Montserrat', Arial, sans-serif; color: #1a237e; font-weight: 700; letter-spacing: 1px; margin-bottom: 0.4em; font-size: 1.5rem;">
+                Especialistas en animales exóticos
+            </h2>
+            <h3 class="text-center"
+                style="font-family: 'Montserrat', Arial, sans-serif; color: #3949ab; font-weight: 500; margin-bottom: 1em; font-size: 1rem;">
+                ¡Bienvenid@ a nuestra página web!
+            </h3>
+            <!-- Botón para abrir el modal -->
+            <div class="text-center mt-3 pb-2">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalExoticos">
+                    Más información
+                </button>
+            </div>
+            <h5
+                style="font-family: 'Roboto', Arial, sans-serif; color: #333; font-weight: 400; line-height: 1.5; font-size: 0.7rem; background: #fff; border-radius: 10px; padding: 18px 22px; box-shadow: 0 2px 8px rgba(30,60,90,0.04);">
+                Nos alegra que hayas llegado a nuestra página web, el lugar ideal para los amantes y cuidadores de
+                animales exóticos.<br><br>
+                Aquí, combinamos la pasión por la fauna única con la innovación científica y el compromiso con el
+                bienestar animal.<br><br>
+                Somos un equipo joven y en constante formación para ofrecer siempre lo mejor a nuestros pacientes.
+                Disponemos de servicio de hospitalización para animales carnívoros, aves, herbívoros y hospitalización
+                de animales infecciosos, todas ellas de forma independiente para evitar y minimizar el estrés de los
+                animales exóticos hospitalizados.<br><br>
+                Los animales exóticos tienen múltiples particularidades anatómicas, fisiológicas y comportamentales que
+                hacen que requieran de un veterinario especialista en ellos y, por eso, no deben ser tratados en un
+                centro veterinario convencional.<br><br>
+                Te invitamos a recorrer nuestra web y esperamos que la información te sea de utilidad.<br>
+                <span style="color: #1a237e; font-weight: 500;">¡Saludos de todo el equipo!</span>
+            </h5>
+        </div>
+    </div>
+
+    <!-- Modal de Bootstrap -->
+    <div class="modal fade" id="modalExoticos" tabindex="-1" aria-labelledby="modalExoticosLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background: #1a237e;">
+                    <h5 class="modal-title text-white" id="modalExoticosLabel">¿Por qué elegir un especialista en
+                        exóticos?</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Los animales exóticos requieren cuidados y conocimientos específicos. Nuestro equipo está
+                        formado para ofrecer hospitalización diferenciada, atención especializada y protocolos adaptados
+                        a cada especie.
+                    </p>
+                    <ul>
+                        <li>Hospitalización separada para minimizar el estrés.</li>
+                        <li>Atención a aves, reptiles, pequeños mamíferos y más.</li>
+                        <li>Formación continua e innovación científica.</li>
+                    </ul>
+                    <p>
+                        Si tienes dudas sobre el cuidado de tu animal exótico, ¡consúltanos!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FONDO NEGRO -->
+    <div class="bg-dark">
+        <div id="CRISPR">
+            <h1 style="font-size: 330px;"><span style="color: rgb(255, 255, 255);">CRISPR</span></h1>
+        </div>
+        <div class="pb-5 d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div class="mx-5 mb-4 mb-md-0">
+                <h1 class="objeto_Uno" style="font-size: 105px;">
+                    <span style="color: rgb(255, 255, 255);">INNOVANDO UN MUNDO MEJOR</span>
+                </h1>
+                <hr class="mx-auto" style="width: 50%; border-top: 2px solid #7fe828;">
+            </div>
+            <img src="Images/mundoMejor.jpg" class="w-75" alt="Mundo Mejor">
+        </div>
+    </div>
+
+    <!-- CIENTIFICO -->
+    <div class="pb-5 d-flex justify-content-around align-items-center bg-dark" id="laboratorio">
+        <img 
+        src="Images/cientifico.jpg" 
+        class="img-fluid w-25 h-auto mx-5 border p-4"
+        alt="Científico en laboratorio"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="La ciencia es el gran antídoto contra el veneno del entusiasmo y la superstición."
+    >
+        <div>
+            <h3 class="texto_fuente"
+                style="color: rgb(255,255,255); font-size: 12px; max-width: 400px; margin: 0 auto;">
+                Un mundo mejor comienza hoy. Con nosotros. Contigo. <br>
+                Y cada vez que nos involucramos, aprendemos sobre la conservación y actuamos en consecuencia, nos
+                ofrecemos como voluntarios, nos esforzamos por ser mejores, nos acercamos un paso más.<br>
+                Ya hemos establecido que la conservación y la preservación, tal como las conocemos, son admirables y
+                efectivas.<br>
+                Sin embargo, tenemos la capacidad de potenciar estos esfuerzos y hacerlos aún más eficientes para
+                revertir el daño planetario causado por las actividades humanas.
+            </h3>
+            <div class="pt-2 pb-2">
+                <h1 class="objeto_Uno" style="color: #7fe828; margin: 0 auto;">La solución es la de-extinción</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ADN -->
+    <div class="text-center" style="margin-top: -75px;">
+        <img src="Images/ADN.gif" class="img-fluid w-25 h-25 border rounded-circle">
+        <hr class="mx-auto" style="width: 50%; border-top: 2px solid #000000;">
+    </div>
+
+    <div class="row align-items-center justify-content-center mx-5">
+        <div class="col-md-4 text-center d-flex justify-content-center">
+            <div
+                class="border border-2 border-primary rounded-3 bg-light h-75 w-75 d-flex align-items-center justify-content-center">
+                <h1 class="texto_fuente" style="font-size: 20px;">
+                    Esto es el ADN y el nuevo amanecer de la genética
+                </h1>
+            </div>
+        </div>
+        <div class="col-md-4 text-center d-flex justify-content-center">
+            <div class="d-flex align-items-center justify-content-center" style="height: 100%;">
+                <h2 class="objeto_Uno" style="font-size: 16px; max-width: 400px;">
+                    Esto es algo incomprensiblemente microscópico. <br>
+                    Sin embargo, esto es LAANEXEX: la empresa avanzada de genética y biociencias que desarrolla la
+                    ciencia
+                    que nos salvará, a nuestro planeta y a las especies que lo habitan.
+                </h2>
+            </div>
+        </div>
+        <div class="col-md-4 text-center d-flex justify-content-center">
+            <div
+                class="border border-2 border-primary rounded-3 bg-light h-75 w-75 d-flex align-items-center justify-content-center p-2">
+                <h1 class="texto_fuente" style="font-size: 20px;">
+                    Innovación, esperanza y futuro <br>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOLITAS -->
+    <div class="d-flex justify-content-center">
+        <video width="1000" height="350" autoplay loop muted>
+            <source src="Video/video.mp4" type="video/mp4">
+            Tu navegador no admite videos HTML5.
+        </video>
+    </div>
+
+    <!-- LOBOS -->
+    <div class="image-container" style="position: relative; z-index: 0;" id="lobos">
+        <img src="Images/manada.png" alt="Manada">
+        <h1 class="texto_fuente">REVIVIENDO GIGANTES</h1>
+        <h2> La ciencia que desafia 12.000 años de extinción </h2>
+    </div>
+
+    <div class="border border-primary rounded"
+        style="font-size: 18px; margin-top: -75px; max-width: 450px; text-align: center; border-width: 3px !important; position: relative; z-index: 1; background: white; margin-left: auto; margin-right: auto;">
+        Las técnicas de conservación disruptivas y el pensamiento innovador han producido ya resultados sorprendentes.
+        Tomemos como ejemplo la reintroducción de lobos en Yellowstone.
+    </div>
+    <div class="row">
+        <div class="col-md 4">
+            <img src="Images/loboCuatro.jpg">
+        </div>
+        <div class="texto_fuente col-md-4" style="font-size: 11px;">
+            En 1995, el Proyecto Lobo de Yellowstone reintrodujo poblaciones de lobos en el parque. Los efectos fueron
+            inmediatos. La reacción en cadena comenzó de inmediato. Los alces tuvieron que huir por sus vidas (como
+            suelen hacerlo), alejándolos de los sauces que necesitaban los castores. Así, los castores regresaron.
+            También regresaron sus represas. Y el parque es notablemente más saludable ahora, desde los peces y las aves
+            hasta la vegetación y la calidad del agua.
+
+            <hr class="mx-auto" style="width: 50%; border-top: 2px solid #000000;">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+                <div class="rounded-circle bg-light border border-primary d-flex align-items-center justify-content-center me-2"
+                    style="width: 100%; height: 100px;">
+                    <span class="text-center">Leer más acerca de los lobos de Yellowstone.</span>
+                    <a href="https://www.theguardian.com/environment/2020/jan/25/yellowstone-wolf-project-25th-anniversary"
+                        class="btn rounded-circle" style="width: 50px; height: 55px; font-size: 2.5em;"
+                        target="_blank">+</a>
+                </div>
+            </div>
+            <hr class="mx-auto" style="width: 50%; border-top: 2px solid #000000;">
+            <div style="font-size: 11px;">
+                A principios del siglo XX, los lobos fueron prácticamente exterminados en Yellowstone. Los efectos
+                fueron dramáticos. En primer lugar, los alces ya no se veían obligados a estar atentos a los
+                depredadores. Así, se volvieron anormalmente sedentarios y comenzaron a comer los árboles más cercanos,
+                que casualmente eran una variedad de sauce que los castores necesitaban para construir sus represas.
+                Cuando los castores se quedaron sin la madera que necesitaban, se marcharon.<br>
+                Con el tiempo, la población de castores disminuyó hasta solo una colonia, y los ríos se llenaron de
+                árboles caídos y otros desechos. La falta de represas de castores también redujo la cantidad de pozas
+                tranquilas donde los peces podían reproducirse, y la falta de protección natural provocó la erosión y el
+                arrastre de sedimentos en ciertas zonas de los ríos.<br>
+                Todo esto cambiaría.
+            </div>
+        </div>
+    </div>
+
+    <!-- LILA -->
+    <div style="background-color: purple;">
+        <div class="row">
+            <div class="col-md-4 pt-5 pb-3 mx-5">
+                <div class="pb-4">
+                    <h1 style="font-size: 14px;"><span style="color: rgb(255, 255, 255);">Gracias a nuestro esfuerzo,
+                            hemos
+                            logrado reintroducir con éxito más de 50 especies en su hábitat natural.</span></h1>
+                </div>
+                <img src="Images/circulo.png" class="img-fluid w-75 h-auto">
+            </div>
+            <div class="col-md-4" style="color: rgb(255, 255, 255);">
+                <div class="d-flex justify-content-center p-3">
+                    <h1><span style="color: rgb(255, 255, 255);">REWILDING</span></h1>
+                </div>
+
+                <!-- Botón para abrir el modal -->
+                <div class="d-flex justify-content-center mb-4">
+                    <button type="button" class="btn" style="background-color:#ff64b9" data-bs-toggle="modal"
+                        data-bs-target="#modalRewilding">
+                        Más información sobre Rewilding
+                    </button>
+                </div>
+
+                <!-- Modal Rewilding -->
+                <div class="modal fade" id="modalRewilding" tabindex="-1" aria-labelledby="modalRewildingLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header" style="background: #ff64b9;">
+                                <h5 class="modal-title text-white" id="modalRewildingLabel">¿Qué es Rewilding?</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body"
+                                style="font-family: 'Roboto', Arial, sans-serif; font-size: 1rem; color: #333;">
+                                <p>
+                                    El rewilding es un enfoque de conservación que busca restaurar ecosistemas naturales
+                                    y promover la recuperación de la biodiversidad mediante la reintroducción de
+                                    especies clave y la reducción de la intervención humana.
+                                </p>
+                                <ul>
+                                    <li>Fomenta la recuperación de hábitats naturales.</li>
+                                    <li>Promueve el equilibrio ecológico y la resiliencia ambiental.</li>
+                                    <li>Contribuye a la mitigación del cambio climático.</li>
+                                    <li>Impulsa la conexión entre las personas y la naturaleza.</li>
+                                </ul>
+                                <p>
+                                    Nuestro compromiso con el rewilding refleja nuestra pasión por proteger y restaurar
+                                    la vida silvestre y sus hábitats.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 style="font-size: 11px;">MÁS DE</h1>
+                <h1 style="font-size: 45px;">50</h1>
+                <h2 style="font-size: 11px;">especies</h2>
+                <h1 style="font-size: 22px;">HAN SIDO SALVADOS POR LOS ESFUERZOS <br> DE CONSERVACIÓN RECIENTES</h1>
+            </div>
+        </div>
+
+        <hr class="mx-auto" style="width: 75%; border-top: 2px solid #ffffff;">
+
+        <div class="text-center ">
+            <h1 style="font-size: 80px;"><span style="color: rgb(255, 255, 255);">LOS LOBOS QUE RESCATAMOS <br> DE LA
+                    EXTINCIÓN</span></h1>
+        </div>
+        <hr class="mx-auto" style="width: 75%; border-top: 2px solid #ffffff;">
+
+        <!-- CUATRO PARTES DE LOBOS -->
+        <!-- DOS-->
+        <div class="row align-items-center mx-5 pt-3"
+            style="background: linear-gradient(90deg, #333, #555, #333); border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+            <div class="col-md-4 text-center">
+                <img src="Images/lobosDosBebes.jpg" class="img-fluid w-50 h-auto"
+                    style="border-radius: 15px; filter: grayscale(30%); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+            </div>
+            <div class="col-md-4 text-center d-flex align-items-center justify-content-center">
+                <h3
+                    style="color: #fff; background: rgba(0,0,0,0.5); padding: 12px 24px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                    Rómulo y Remo</h3>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="Images/loboTres.jpg" class="img-fluid w-50 h-auto"
+                    style="border-radius: 15px; filter: grayscale(0%); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+            </div>
+        </div>
+        <div class="text-center mx-5 mt-4 px-4" id="descripcion-lobos">
+            <p>
+                <strong>Rómulo y Remo son los primeros lobos traídos de vuelta gracias a la ciencia de la
+                    de-extinción.</strong><br>
+                A través de avanzadas técnicas genéticas, hemos logrado restaurar una especie que una vez se creyó
+                perdida para siempre. Su existencia es una esperanza para la biodiversidad y un recordatorio del poder
+                de la innovación para sanar nuestro planeta.
+            </p>
+        </div>
+        <hr class="mx-auto" style="width: 75%; border-top: 2px solid #ffffff;">
+
+        <!-- UNO -->
+        <div class="row justify-content-center mx-5 pt-3"
+            style="background: linear-gradient(90deg, #333, #555, #333); border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+            <div class="col-md-4 text-center">
+                <img src="Images/bebeLoboSolo.jfif" class="img-fluid w-50 h-auto"
+                    style="border-radius: 15px; filter: grayscale(30%); box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+            </div>
+            <div class="col-md-4 text-center d-flex align-items-center justify-content-center">
+                <h3
+                    style="color: #fff; background: rgba(0,0,0,0.5); padding: 12px 24px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
+                    Khaleesi</h3>
+            </div>
+            <div class="col-md-4 text-center pt-2">
+                <img src="Images/loboDos.jpg" class="img-fluid w-50 h-auto"
+                    style="border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+            </div>
+        </div>
+
+        <div class="text-center mx-5 mt-4 px-4" id="descripcion-lobos" style="margin-top: 20px; margin-bottom: 60px;">
+            <p>
+                <strong>Khaleesi llegó después, marcando un nuevo capítulo en la historia de la manada
+                    recreada.</strong><br>
+                Su incorporación refuerza el éxito de la de-extinción y la esperanza de un futuro donde especies
+                perdidas puedan regresar a nuestros ecosistemas.
+            </p>
+        </div>
+        <hr class="mx-auto pt-3 pb-3" style="width: 75%; border-top: 2px solid #ffffff;">
+    </div>
+
+    <hr class="mx-auto" style="width: 50%; border-top: 2px solid #ffffff;">
+
+    <!-- MAMUT -->
+
+    <div class="row" id="mamut">
+        <div class="texto_fuente col-md-6 text-center">
+            <p style="font-size: 35px;">
+                El mamut representa <br> los inicios de la <br> de-extinción.
+            </p>
+        </div>
+        <div class="col-md-1">
+            <!-- HUECO PARA MEDIO -->
+        </div>
+        <div class="texto_fuente text-center col-md-4 ">
+            <p style="font-size: 11px; max-width: 500px;">
+                LAANEXEX tiene como objetivo desarrollar una biblioteca de de-extinción de animales, empezando por la
+                resurrección genética del mamut lanudo y almacenando ADN y embriones de especies en peligro de
+                extinción. Este proceso busca mitigar la pérdida de biodiversidad causada por el ser humano y ofrecer un
+                margen de protección a especies amenazadas, dándoles una oportunidad adicional frente a la extinción.
+                <br> <br>
+                Nuestro laboratorio emplea científicos expertos en edición genómica con CRISPR, desarrollo de software y
+                herramientas avanzadas para estos fines. Su enfoque no es recrear un mamut puro, sino un elefante
+                adaptado al Ártico con características funcionales del mamut, capaz de sobrevivir en hábitats similares
+                y, potencialmente, contribuir a la resiliencia de esos ecosistemas frente al cambio climático.
+            </p>
+        </div>
+    </div>
+
+    <div class="pt-3 pb-5 d-flex justify-content-center">
+        <img src="Images/mamut.png" class="img-fluid w-50 h-auto">
+        <div>
+            <hr class="mx-auto" style="width: 65%; border-top: 2px solid #ff7300;">
+            <h2 class="texto_fuente text-center" style="font-size: 25px;">
+                El mamut lanudo es solo la primera gota <br> en el cubo de los futuros esfuerzos de conservación.
+            </h2>
+            <hr class="mx-auto" style="width: 65%; border-top: 2px solid #ff7300;">
+            <h4 class="texto_fuente text-align mx-5 pt-4 pb-4 " style="font-size: 14px;">
+                <hr class="mx-auto" style="width: 82%; border-top: 2px solid #ff7300;">
+                <label class="ms-5">+ RESPALDO DE ANIMALES EN PELIGRO DE EXTINCIÓN</label>
+                <hr class="mx-auto" style="width: 82%; border-top: 2px solid #ff7300;">
+                <label class="ms-5">+ DE-EXTINCIÓN</label>
+                <hr class="mx-auto" style="width: 82%; border-top: 2px solid #ff7300;">
+                <label class="ms-5">+ DIVERSIFICACIÓN DE ESPECIES</label>
+                <hr class="mx-auto" style="width: 82%; border-top: 2px solid #ff7300;">
+                <label class="ms-5">+ REEMPLAZO DE ESPECIES</label>
+                <hr class="mx-auto" style="width: 82%; border-top: 2px solid #ff7300;">
+                <label class="ms-5">+ CONSERVACIÓN DE ESPECIES</label>
+                <hr class="mx-auto" style="width: 82%; border-top: 2px solid #ff7300;">
+            </h4>
+            <hr class="mx-auto" style="width: 100%; border-top: 2px solid #00ff48;">
+            <h2 class="texto_fuente text-center" style="font-size: 11px;">
+                Los resultados de nuestro laboratorio abordarán directamente los problemas relacionados con la pérdida
+                de biodiversidad y la disminución general de especies provocados por la degradación acelerada de la
+                tierra, el mar y el aire por parte del ser humano. <br> <br> En última instancia, el objetivo es
+                revertir
+                este
+                daño reintroduciendo especies animales y vegetales clave que desempeñaron un papel activo en la
+                preservación de algunos de los ecosistemas más beneficiosos para el clima en la Tierra, muchos de los
+                cuales prácticamente han desaparecido hoy en día.
+            </h2>
+            <hr class="mx-auto" style="width: 100%; border-top: 2px solid #00ff48;">
+        </div>
+    </div>
+
+    <div class="row align-items-center text-center">
+        <!--  Pelo de mamut -->
+        <div class="col-md-4">
+            <img src="Images/peloMamut.jpg" class="img-fluid w-50 h-auto rounded-circle mb-2" alt="Pelo de mamut">
+            <div>Pelo de mamut</div>
+        </div>
+
+        <!-- Flecha -->
+        <div class="col-md-4 d-flex flex-column align-items-center justify-content-center">
+            <div class="mb-2">
+                <!-- Flecha SVG de izquierda a derecha -->
+                <svg width="80" height="40">
+                    <line x1="10" y1="20" x2="70" y2="20" stroke="#333" stroke-width="3" />
+                    <polygon points="70,20 60,15 60,25" fill="#333" />
+                </svg>
+            </div>
+            <div class="text-center">
+                <strong>Edición genética avanzada</strong><br>
+                <span style="font-size:0.95em;">
+                    CRISPR, variantes genéticas, <br>
+                    transferencia de genes, <br>
+                    desextinción, <br>
+                    <i>Mc1r</i>, <i>Fgf5</i>, <i>Krt25</i><br>
+                    adaptación al frío, <br>
+                    bioingeniería
+                </span>
+            </div>
+        </div>
+
+        <!-- Pelo de mamut en ratas -->
+        <div class="col-md-4">
+            <img src="Images/ratasMamut.png" class="img-fluid w-50 h-auto rounded-circle mb-2"
+                alt="Rata con pelo de mamut">
+            <div>Pelo de mamut en ratas</div>
+        </div>
+    </div>
+
+    <!-- FRASE ENTRE LINEAS. -->
+    <hr class="mx-auto" style="width: 50%; border-top: 2px solid #000000;">
+    <p class="text-center mx-auto" style="width: 60%; font-weight: 600; font-size: 1.1rem; margin: 1rem 0;">
+        Estamos presenciando el amanecer de una nueva era, en la que la biotecnología y la ingeniería genética nos
+        permiten recuperar características perdidas en la historia evolutiva. Este avance no solo redefine los límites
+        de la ciencia, sino que abre la puerta a posibilidades inimaginables para la conservación, la desextinción y la
+        comprensión profunda de la vida en la Tierra.
+    </p>
+    <hr class="mx-auto" style="width: 50%; border-top: 2px solid #000000;">
+
+    <div class="d-flex justify-content-center" id="proyectos">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-interval="2000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/Images/soñarUno.jpg" alt="Uno">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>El inicio del sueño</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Images/soñamosDos.jpg" alt="Dos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Imaginando nuevos horizontes</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Images/soñamosTres.jpeg" alt="Tres">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>La ciencia toma forma</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/Images/soñamosCuatro.jpg" alt="Cuatro">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Un futuro posible</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- VIDEO EMPRESA-->
+    <div class="container my-5" id="videoEmpresa">
+        <div class="row align-items-center">
+            <div class="col-lg-7 mb-4 mb-lg-0 d-flex justify-content-center">
+                <div class="ratio ratio-16x9 rounded-3 shadow" style="max-width: 1000px; width: 100%;">
+                    <video autoplay loop muted playsinline
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 1rem;">
+                        <source src="Video/empresa.mp4" type="video/mp4">
+                        Tu navegador no admite videos HTML5.
+                    </video>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="border border-2 border-primary rounded-3 bg-light p-4 shadow-sm">
+                    <h2 class="mb-3 text-center" style="color: #0d6efd;">Innovación y Calidad <br> en Cada Análisis</h2>
+                    <p>En nuestro laboratorio combinamos tecnología avanzada con un equipo humano experto para ofrecer
+                        resultados precisos y confiables.</p>
+                    <ul>
+                        <li>Equipos de última generación</li>
+                        <li>Certificaciones internacionales</li>
+                        <li>Atención personalizada y rápida</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESEÑAS -->
+    <div class="row align-items-center">
+        <div class="col-md-4">
+            <img src="Images/reseñaUno.png" class="img-fluid w-100 h-auto mx-5">
+        </div>
+        <div class="col-md-8">
+            <div id="carouselReseña" class="carousel slide mb-5 w-100 mx-auto mt-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="Images/reseñaDos.png" class="d-block w-100" alt="reseñaDos">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="Images/reseñaTres.png" class="d-block w-100" alt="reseñaTres">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="Images/reseñaSiete.png" class="d-block w-100" alt="reseñaSiete">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="Images/reseñaCuatro.png" class="d-block w-100" alt="reseñaCuatro">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="Images/reseñaCinco.png" class="d-block w-100" alt="reseñaCinco">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="Images/reseñaSeis.png" class="d-block w-100" alt="reseñaSeis">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselReseña"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselReseña"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row bg-light">
+
+        <!-- CONTACTANOS -->
+        <div class="col-md-4" id="contactanos">
+            <form class="needs-validation mx-auto mt-5 p-4 border rounded shadow" style="max-width: 250px;" novalidate
+                id="contactoForm">
+                <h4 class="mb-4 text-center">Contáctanos</h4>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">Por favor, ingresa un email válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="asunto" class="form-label">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" required>
+                    <div class="invalid-feedback">Por favor, indica el asunto.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                    <div class="invalid-feedback">Por favor, escribe tu mensaje.</div>
+                </div>
+                <div id="alerta" class="alert d-none" role="alert"></div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+
+            <script>
+                // Validación
+                (function () {
+                    'use strict'
+                    var form = document.getElementById('contactoForm');
+                    var alerta = document.getElementById('alerta');
+                    form.addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        if (form.checkValidity()) {
+                            alerta.className = "alert alert-success mt-3";
+                            alerta.textContent = "¡Mensaje enviado correctamente!";
+                            alerta.classList.remove("d-none");
+                            form.reset();
+                            form.classList.remove('was-validated');
+                        } else {
+                            alerta.className = "alert alert-danger mt-3";
+                            alerta.textContent = "Por favor, completa todos los campos requeridos.";
+                            alerta.classList.remove("d-none");
+                        }
+                    }, false);
+                })();
+            </script>
+        </div>
+
+        <!-- REDES -->
+        <div class="col-md-4">
+            <div style="text-align: center; padding: 20px;">
+                <h3>¡Síguenos en nuestras redes sociales!</h3>
+                <p>
+                    Mantente al día con las últimas noticias, descubrimientos y curiosidades del mundo animal.<br>
+                    Únete a nuestra comunidad y comparte tu pasión por la ciencia y la conservación.
+                </p>
+                <div style="font-size: 2em;">
+                    <a href="https://x.com/" target="_blank" title="Twitter"
+                        style="margin: 0 10px; text-decoration: none;">🐦</a>
+                    <a href="https://facebook.com/" target="_blank" title="Facebook"
+                        style="margin: 0 10px; text-decoration: none;">📘</a>
+                    <a href="https://instagram.com/" target="_blank" title="Instagram"
+                        style="margin: 0 10px; text-decoration: none;">📸</a>
+                    <a href="https://youtube.com/" target="_blank" title="YouTube"
+                        style="margin: 0 10px; text-decoration: none;">🎥</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CITA -->
+        <div class="col-md-4" id="cita">
+            <form class="needs-validation mx-auto mt-5 p-4 border rounded shadow" style="max-width: 250px;" novalidate
+                id="citaForm">
+                <h4 class="mb-4 text-center">Solicita tu cita online</h4>
+                <div class="mb-3">
+                    <label for="tipoCita" class="form-label">¿Para qué es la cita?</label>
+                    <select class="form-select" id="tipoCita" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="laboratorio">Laboratorio</option>
+                        <option value="veterinaria">Veterinaria</option>
+                    </select>
+                    <div class="invalid-feedback">Por favor, elige el tipo de cita.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="nombreCita" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="nombreCita" required>
+                    <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="emailCita" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="emailCita" required>
+                    <div class="invalid-feedback">Por favor, ingresa un email válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="fechaCita" class="form-label">Fecha de la cita</label>
+                    <input type="date" class="form-control" id="fechaCita" required>
+                    <div class="invalid-feedback">Por favor, selecciona una fecha.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="horaCita" class="form-label">Hora de la cita</label>
+                    <input type="time" class="form-control" id="horaCita" required>
+                    <div class="invalid-feedback">Por favor, selecciona una hora.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="motivoCita" class="form-label">Motivo o comentarios</label>
+                    <textarea class="form-control" id="motivoCita" rows="3" required></textarea>
+                    <div class="invalid-feedback">Por favor, escribe el motivo de la cita.</div>
+                </div>
+                <div id="alertaCita" class="alert d-none" role="alert"></div>
+                <button type="submit" class="btn btn-primary w-100">Reservar cita</button>
+            </form>
+
+            <script>
+                (function () {
+                    'use strict'
+                    var form = document.getElementById('citaForm');
+                    var alerta = document.getElementById('alertaCita');
+                    form.addEventListener('submit', function (event) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                        if (form.checkValidity()) {
+                            alerta.className = "alert alert-success mt-3";
+                            alerta.textContent = "¡Cita solicitada correctamente! Pronto nos pondremos en contacto contigo.";
+                            alerta.classList.remove("d-none");
+                            form.reset();
+                            form.classList.remove('was-validated');
+                        } else {
+                            alerta.className = "alert alert-danger mt-3";
+                            alerta.textContent = "Por favor, completa todos los campos requeridos.";
+                            alerta.classList.remove("d-none");
+                        }
+                    }, false);
+                })();
+            </script>
+        </div>
+    </div>
+
+    <!-- Pie de pagina -->
+    <footer class="bg-dark text-white mt-5 p-4">
+        <div class="container">
+            <div class="row">
+                <!-- Información de contacto -->
+                <div class="col-md-4 mb-3">
+                    <h5>Contacto</h5>
+                    <p>
+                        <i class="bi bi-envelope"></i> miguel@deextincion.org<br>
+                        <i class="bi bi-telephone"></i> +34 123 456 789<br>
+                        <i class="bi bi-geo-alt"></i> Calle Laboratorio, Merida, España
+                    </p>
+                </div>
+                <!-- Enlaces útiles -->
+                <div class="col-md-4 mb-3">
+                    <h5>Enlaces</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white">Inicio</a></li>
+                        <li><a href="#imagenes-equipo" class="text-white">Sobre nosotros</a></li>
+                        <li><a href="#laboratorio" class="text-white">Laboratorio</a></li>
+                        <li><a href="#proyectos" class="text-white">Proyectos</a></li>
+                        <li><a href="#contactanos" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <!-- Redes sociales y misión -->
+                <div class="col-md-4 mb-3">
+                    <p class="mt-3"><em>Trabajamos por un futuro donde la biodiversidad perdida pueda ser
+                            restaurada.</em></p>
+                </div>
+            </div>
+            <hr class="bg-secondary">
+            <div class="row">
+                <div class="col-md-6">
+                    <small>© 2025 Proyecto De-Extinción. Todos los derechos reservados.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3" data-bs-toggle="modal"
+                        data-bs-target="#modalPrivacidad">Política de privacidad</a>
+                    <a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#modalTerminos">Términos y
+                        condiciones</a>
+                </div>
+
+                <!-- Modal Política de Privacidad -->
+                <div class="modal fade" id="modalPrivacidad" tabindex="-1" aria-labelledby="modalPrivacidadLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalPrivacidadLabel">Política de privacidad</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body text-dark">
+                                <p>
+                                    En nuestro laboratorio, la protección de tus datos personales es prioritaria. Toda
+                                    la información recopilada sobre usuarios, clientes y animales de experimentación se
+                                    trata conforme a la normativa vigente, garantizando confidencialidad y seguridad en
+                                    cada etapa del proceso.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Términos y Condiciones -->
+                <div class="modal fade" id="modalTerminos" tabindex="-1" aria-labelledby="modalTerminosLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTerminosLabel">Términos y condiciones</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body text-dark">
+                                <p>
+                                    El uso de este sitio implica la aceptación de nuestras normas para el manejo de
+                                    información, ética en experimentación animal y cumplimiento de la legislación
+                                    aplicable.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl)
+            })
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
